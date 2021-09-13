@@ -1,0 +1,153 @@
+.container{
+    height: 800px;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+}
+.mode{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: #286ede;
+    cursor: pointer;
+}
+.mode:hover{
+    background: #FFDEAD;
+    color: black;
+}
+
+.dark-mode{
+    background: #286ede;
+    color: white;
+}
+.light-mode{
+    background: white;
+    color: #286ede;
+}
+
+
+.note-icon-div{
+    height: 130px;
+    width: 130px;
+    margin: auto;
+}
+.note-icon-div img{
+    height: 100%;
+    width: 100%;
+}
+.main-heading{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+.inputBox{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+.main-btns{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-btns button{
+    height: 100%;
+    width: 130px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #286ede;
+    color: white;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.main-btns button:hover{
+    background: #FFDEAD;
+    color: black;
+}
+.todos-container{
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    overflow: auto;
+}
+.todo-item{
+    width: 100%;
+    height: 45px;
+    background: #286ede;
+    border-radius: 7px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.todo-item:hover{
+    background: #FFDEAD;
+    color: black;
+}
+.todo-item-text{
+    height: 100%;
+    width: 70%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.todo-item-icons{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.edit-icon:hover{
+    color: green;
+}
+.delete-icon:hover{
+    color: red;
+}
+.no-work{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ################# Responsive style ############## */
+@media only screen and (max-width:510px){
+    .container{
+        width: 360px;
+    }
+}
